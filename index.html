@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="cssfile.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <div class="calculator">
+        <div class="screen" id="screen">
+            <div class="subScreen">
+                <div class="prevScreen" id="prev_">
+                    
+                </div>
+                <div class="prevScreen" id="optr_">
+
+                </div>
+            </div>
+            <div class="mainScreen" id="new_">
+
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="row1">
+                <button class="numeric" id="num7" onmouseover="darken('num7')" onmouseleave="restore('num7')" onclick="keyPressed('7')">7</button>
+                <button class="numeric" id="num8" onmouseover="darken('num8')" onmouseleave="restore('num8')" onclick="keyPressed('8')">8</button>
+                <button class="numeric" id="num9" onmouseover="darken('num9')" onmouseleave="restore('num9')" onclick="keyPressed('9')">9</button>
+                <button class="functional" id="funcAdd" onmouseover="darken('funcAdd')" onmouseleave="restore('funcAdd')" onclick="keyPressed('+')">+</button>
+            </div>
+            <div class="row2">
+                <button class="numeric" id="num4" onmouseover="darken('num4')" onmouseleave="restore('num4')" onclick="keyPressed('4')">4</button>
+                <button class="numeric" id="num5" onmouseover="darken('num5')" onmouseleave="restore('num5')" onclick="keyPressed('5')">5</button>
+                <button class="numeric" id="num6" onmouseover="darken('num6')" onmouseleave="restore('num6')" onclick="keyPressed('6')">6</button>
+                <button class="functional" id="funcSubtract" onmouseover="darken('funcSubtract')" onmouseleave="restore('funcSubtract')" onclick="keyPressed('-')">-</button>
+            </div>
+            <div class="row3">
+                <button class="numeric" id="num1" onmouseover="darken('num1')" onmouseleave="restore('num1')" onclick="keyPressed('1')">1</button>
+                <button class="numeric" id="num2" onmouseover="darken('num2')" onmouseleave="restore('num2')" onclick="keyPressed('2')">2</button>
+                <button class="numeric" id="num3" onmouseover="darken('num3')" onmouseleave="restore('num3')" onclick="keyPressed('3')">3</button>
+                <button class="functional" id="funcProduct" onmouseover="darken('funcProduct')" onmouseleave="restore('funcProduct')" onclick="keyPressed('*')">*</button>
+            </div>
+            <div class="row4">
+                <button class="functional" id="funcDivide" onmouseover="darken('funcDivide')" onmouseleave="restore('funcDivide')" onclick="keyPressed('/')">/</button>
+                <button class="numeric" id="num0" onmouseover="darken('num0')" onmouseleave="restore('num0')" onclick="keyPressed('0')">0</button>
+                <button class="functional" id="funcModulo" onmouseover="darken('funcModulo')" onmouseleave="restore('funcModulo')" onclick="keyPressed('%')">%</button>
+                <button class="equals" id="funcResult" onmouseover="darken('funcResult')" onmouseleave="restore('funcResult')" onclick="keyPressed('=')">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
